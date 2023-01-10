@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "3f14e885-39b4-4a17-86ef-42a020b5c5c0",
+		"name": "Nttdata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14567573"
+	},
+	"item": [
+		{
+			"name": "Consultar empleado",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo_documento\" : \"C\",\r\n    \"documento\" : \"23445322\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/employee/consult",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"employee",
+						"consult"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
